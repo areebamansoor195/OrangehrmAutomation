@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM">
+
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter">
+</listener>
+</listeners>
+
+	<test name="Baseclass">
+		<classes>
+			<class name="orangehrm.BaseClass" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="title">
+		<classes>
+			<class name="orangehrm.validateTitle" />
+		</classes>
+	</test>
+	
+	<test name="login">
+		<classes>
+			<class name="orangehrm.Login" />
+		</classes>
+	</test>
+
+
+	<test name="forgot">
+		<classes>
+			<class name="orangehrm.ForgotPassword" />
+		</classes>
+	</test>
+
+
+	<test name="admin">
+		<classes>
+			<class name="orangehrm.Admin_Feature" />
+		</classes>
+	</test>
+	
+	<test name="Logout">
+		<classes>
+			<class name="orangehrm.Logout" />
+		</classes>
+	</test>
+	
+</suite> <!-- Suite -->

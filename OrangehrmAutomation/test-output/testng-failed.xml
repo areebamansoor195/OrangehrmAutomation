@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRM]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="forgot(failed)">
+    <classes>
+      <class name="orangehrm.ForgotPassword">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="forgot"/>
+        </methods>
+      </class> <!-- orangehrm.ForgotPassword -->
+    </classes>
+  </test> <!-- forgot(failed) -->
+</suite> <!-- Failed suite [OrangeHRM] -->
